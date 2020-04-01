@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.css" integrity="sha256-+dIh4jG2jQTHZwW81yUo8h6tzXWcNumyNL5XPZbwp1E=" crossorigin="anonymous" />
+    <title>FullPagejs</title>
+</head>
+<body>
+
+    <div id="fullPage">
+        <div class="section s1">
+           
+            <div class="slide s4">
+                <h1>this is slide 1</h1>
+            </div>
+            <div class="slide s3">
+                <h1>this is slide 2</h1>
+            </div>
+            <div class="slide s2">
+                <h1>this is slide 3</h1>
+            </div>
+        </div>
+
+        <div class="section s2">
+            <h1>the second section</h1>
+        </div>
+
+        <div class="section s3">
+            <h1>the third section</h1>
+        </div>
+
+        <div class="section s4">
+            <h1>the fourth section</h1>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+
+     <script>
+         new fullpage('#fullPage', {
+             autoScrolling: true,
+             navigation:true,
+             anchors:['section1', 'section2', 'section3','section4'],
+             navigationTooltips:['Home','About Us','Contact','Membership'],
+             showActiveTooltip:true,
+             controlArrows:false,
+             slidesNavigation:true
+         });
+     </script>
+</body>
+
+</html>
